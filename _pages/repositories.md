@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: page # Uses the about page layout from _layouts/
 permalink: /repositories/
-title: repositories
+title: repositories # Internal page title
 description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
 nav: true
-nav_order: 4
+nav_order: 2
 ---
 
 {% if site.data.repositories.github_users %}

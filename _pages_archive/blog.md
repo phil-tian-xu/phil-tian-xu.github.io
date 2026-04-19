@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: default # Uses the about page layout from _layouts/
 permalink: /blog/
-title: blog
-nav: true
-nav_order: 1
+title: blog # Internal page title
+nav: false
 pagination:
   enabled: true
   collection: posts

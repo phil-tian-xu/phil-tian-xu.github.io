@@ -1,10 +1,9 @@
 ---
-layout: page
-title: projects
+layout: page # Uses the about page layout from _layouts/
+title: projects # Internal page title
 permalink: /projects/
 description: A growing collection of your cool projects.
-nav: true
-nav_order: 3
+nav: false
 display_categories: [work, fun]
 horizontal: false
 ---
