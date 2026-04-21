@@ -22,7 +22,16 @@ strong {
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
+html {
+  font-size: 20px;
+}
 
+
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+}
 table {
   td,
   th {

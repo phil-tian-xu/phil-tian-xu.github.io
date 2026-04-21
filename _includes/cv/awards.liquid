@@ -9,34 +9,31 @@
         {% capture start_date %}
           {% if entry.date %}{{ entry.date }}{% endif %}
         {% endcapture %}
-
         {% if start_date != '' %}
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                      {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column d-flex flex-column justify-content-center">
+              {% capture award_year %}
+                {% if entry.date %}{{ entry.date | split: '-' | first }}{% endif %}
+              {% endcapture %}
+              {% if award_year != '' %}
+                <div class="mb-2">
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle"
+                        style="min-width: 75px; font-size: 0.9rem; padding: 0.35em 0.6em;">
+                    {{ award_year }}
+                  </span>
+                </div>
+              {% endif %}
+            </div>
           <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            {% if entry.url %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
-              </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-            {% endif %}
-
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
-            {% endif %}
-
+               <p class="ml-1 ml-md-4 mb-1" style="font-size: 1rem;">
+              {% if entry.url %}
+                <strong><a href="{{ entry.url }}">{{ entry.title }}</a></strong>
+              {% elsif entry.title %}
+                <strong>{{ entry.title }}</strong>
+              {% endif %}
+              {% if entry.awarder %}
+                - {{ entry.awarder }}
+              {% endif %}
+            </p>
             {% if entry.summary %}
               <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
