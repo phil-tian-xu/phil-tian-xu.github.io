@@ -79,7 +79,8 @@ ninja.data = [
     {%- endfor -%}
   {%- endif -%}
   {%- for collection in site.collections -%}
-    {%- if collection.label != 'posts' -%}
+    {%- assign collection_config = site.collections | where: "label", collection.label | first -%}
+    {%- if collection.label != 'posts' and collection_config.output == true -%}
       {%- for item in collection.docs -%}
         {
           {%- if item.inline -%}

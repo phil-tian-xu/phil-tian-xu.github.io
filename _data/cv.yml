@@ -58,6 +58,15 @@ cv:
         rank: top 10%
         relevant_modules: Portfolio Management (93), Data Analysis (96), Financial Data Analysis and Programming (96)
 
+      - institution: University of California, Berkeley
+        location: Berkeley, USA
+        degree: Bachelor’s-level exchange program
+        field: Berkeley Global Access Program
+        start_date: 2020
+        end_date: 2021
+        final_grade: 3.96/4.0
+        relevant_modules: Modern Statistical Prediction and Machine Learning (A); Numerical Analysis (A)
+
     Experience:
       - company: Imperial Business School
         position: Visiting Researcher
