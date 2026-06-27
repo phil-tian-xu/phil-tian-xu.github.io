@@ -26,4 +26,16 @@ latest_posts:  # Controls `latest posts` section. Content comes from `_posts/`
 
 # Main body content, everything after `---`:
 ---
-I am a PhD student in Finance at the Chinese University of Hong Kong. My research focuses on empirical asset pricing and machine learning.
+I am a PhD student in Finance at the Chinese University of Hong Kong. My research lies at the intersection of **empirical asset pricing, financial econometrics, and machine learning**.
+
+Prior to joining CUHK, I completed an **MSc in Financial Engineering** at **Imperial College London**, where I graduated **first in my cohort** and received the **Outstanding Student Prize**, **[Dean's List](https://www.imperial.ac.uk/business-school/about-us/deans-list/#:~:text=Tan%2C%20Ching%20You-,Xu%2C%20Tian%20(Phil),-Zhang%2C%20Rui)**, and the **Numerical Finance Prize**. Following my master's degree, I joined **Imperial Business School** as a **Visiting Researcher**, working with [Prof. Robert Kosowski](https://www.imperial.ac.uk/people/r.kosowski) and [Dr. Farouk Jivraj](https://profiles.imperial.ac.uk/f.jivraj) on empirical asset pricing, systematic investing, and macro-finance research.
+
+Before pursuing academia full-time, I worked as a **Quantitative Researcher** at **[AQUMON](https://www.aqumon.com/en/)**, a leading fintech asset management company in Hong Kong, where I conducted research on empirical asset pricing, portfolio optimization, and systematic investment strategies.
+
+---
+
+# Research Interests
+
+My research broadly focuses on **empirical asset pricing and financial machine learning**.
+
+I am particularly interested in understanding how modern statistical learning methods can improve our understanding of financial markets while remaining consistent with economic theory. More broadly, I am interested in building data-driven methods that bridge rigorous financial theory with practical quantitative investment applications.
